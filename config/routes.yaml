@@ -1,0 +1,20 @@
+hwi_oauth_redirect:
+    resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
+    prefix:   /connect
+
+hwi_oauth_login:
+    resource: "@HWIOAuthBundle/Resources/config/routing/login.xml"
+    prefix:   /login
+
+auth0_login:
+    path:    /auth0/callback
+
+auth0_logout:
+    path: /auth0/logout
+
+ # config/routes.yaml
+
+# the "app_lucky_number" route name is not important yet
+index:
+    path: /
+    controller: App\Controller\LuckyController::number   
